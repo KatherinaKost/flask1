@@ -45,7 +45,7 @@ def get_weather(city=None):
     return result
 
 def get_rates():
-    url = "https://www.nbrb.by/api/exrates/rates?periodicity=0"
+    url = "https://api.nbrb.by/exrates/rates?periodicity=0"
     response = requests.get(url, timeout=20)
     data = response.json()
 
