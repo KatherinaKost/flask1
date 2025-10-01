@@ -155,5 +155,5 @@ def hw():
 def exchange_rates():
     return dict(rates=get_url.get_rates())
 
-app.run(debug=True)
+""" app.run(debug=True) """
 
