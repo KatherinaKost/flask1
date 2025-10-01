@@ -46,7 +46,7 @@ def get_weather(city=None):
 
 def get_rates():
     url = "https://www.nbrb.by/api/exrates/rates?periodicity=0"
-    response = requests.get(url, timeout=5)
+    response = requests.get(url, timeout=20)
     data = response.json()
 
     usd_list = [item for item in data if item['Cur_Abbreviation'] == 'USD']
